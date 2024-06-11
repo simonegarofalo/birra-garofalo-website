@@ -17,7 +17,7 @@ input{
     }
     .bottone{
         width: 150px;
-        border: white solid 1px;
+        border: black solid 1px;
         border-radius: 5%;
     }
     select{
