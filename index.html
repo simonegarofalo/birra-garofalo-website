@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Test
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="database.php" method="post">
+        Il tuo nome:<br>
+        <input type="text" name="firstname" placeholder="Nome" required><br><br>
+        Il tuo cognome:<br>
+        <input type="text" name="lastname" placeholder="Cognome" required><br><br>
+    <label for="provincia"> La tua regione:</label><br>
+        <select name="regione">
+        <option value="Seleziona">Seleziona</option>
+        <option value="Campania">Campania</option>
+        <option value="Lombardia">Lombardia</option>
+        <option value="Lazio">Lazio</option>
+        <option value="Piemonte">Piemonte</option>
+    </select>
+    <br><br>
+    <input type="checkbox" id="trattamentodati" name="trattamentodati" value="trattamentodati" required>
+    <label for="trattamentodati">Acconsento al trattamento dei miei<br>dati personali secondo l'informativa sulla privacy.
+    <br><br>
+    <input class="bottone" type="submit" value="Avanti">
+   </form>
+</body>
+</html>

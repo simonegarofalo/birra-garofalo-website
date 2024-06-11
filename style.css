@@ -1,0 +1,25 @@
+input{
+    border: white solid 1px;
+    line-height: 20px;
+    }
+    body{
+    background-color: black;
+    font-size: 15px;
+    font-family: "Helvetica";
+    padding-left: 300px;
+    }
+    form{
+    color: white;
+    line-height: 23px;
+    }
+    input{
+        border-radius: 5%;
+    }
+    .bottone{
+        width: 150px;
+        border: white solid 1px;
+        border-radius: 5%;
+    }
+    select{
+        width: 150px;
+    }
