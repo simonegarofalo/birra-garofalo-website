@@ -2,33 +2,42 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>
-        Test
-    </title>
+    <title>Birra Garofalo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-    <form action="database.php" method="post">
-        Il tuo nome:<br>
-        <input type="text" name="firstname" placeholder="Nome" required><br><br>
-        Il tuo cognome:<br>
-        <input type="text" name="lastname" placeholder="Cognome" required><br><br>
-    <label for="provincia"> La tua regione:</label><br>
-        <select name="regione">
-        <option value="Seleziona">Seleziona</option>
-        <option value="Campania">Campania</option>
-        <option value="Lombardia">Lombardia</option>
-        <option value="Lazio">Lazio</option>
-        <option value="Puglia">Puglia</option>
-        <option value="Piemonte">Piemonte</option>
-    </select>
-    <br><br>
-    <input type="checkbox" id="trattamentodati" name="trattamentodati" value="trattamentodati" required>
-    <label for="trattamentodati">Acconsento al trattamento dei miei<br>dati personali secondo l'informativa sulla privacy.
-    <br><br>
-    <input class="bottone" type="submit" value="Avanti">
-   </form>
+<div class="container">
+    <div class="form-box">
+        <div class="top">
+            <h1>Discover the pleasure</h1>
+        </div>
+        <form action="database.php" method="post">
+        <div class="two-forms">
+            <div class="input-box">
+                <input type="text" class="input-field" name="firstname" placeholder="Firstname" required>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" name="lastname" placeholder="Lastname" required>
+                <i class="bx bx-user"></i>
+            </div>
+        </div>
+        <div class="input-box-region">
+            <input type="text" class="input-field" name="region" placeholder="Region" required>
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="trattamentodati" name="trattamentodati" value="trattamentodati" required>
+            <label for="trattamentodati">Acconsento al trattamento dei miei dati personali secondo l'informativa sulla privacy. <a href="#">Terms & Conditions</a></label>
+        </div>
+        <br><br>
+        <div class="input-box">
+            <input type="submit" class="submit" value="Go!">
+        </div>
+        </form>
+    </div>   
+</div> 
 </body>
 </html>
+

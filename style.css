@@ -1,25 +1,87 @@
-input{
-    border: white solid 1px;
-    line-height: 20px;
-    }
-    body{
-    background-color: black;
-    font-size: 15px;
-    font-family: "Helvetica";
-    padding-left: 300px;
-    }
-    form{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(birra-sfondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 110vh;
+}
+
+.top {
+    text-align: center;
     color: white;
-    line-height: 23px;
-    }
-    input{
-        border-radius: 5%;
-    }
-    .bottone{
-        width: 150px;
-        border: black solid 1px;
-        border-radius: 5%;
-    }
-    select{
-        width: 150px;
-    }
+    font-size: 35px;
+    font-style: oblique;
+}
+
+.form-box {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 150px;
+}
+
+.two-forms {
+    display: flex;
+    gap: 130px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.input-box-region {
+    display: flex;
+    width: 100%;
+}
+
+.checkbox {
+    color: white;
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.input-field {
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.submit {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.submit:hover {
+    background: rgb(56, 180, 56);
+    color: white;
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
