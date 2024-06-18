@@ -5,10 +5,11 @@
 }
 
 body {
-    background: url(birra-sfondo.jpeg);
+    background: url(birra.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: black;
 }
 
 .container {
