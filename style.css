@@ -16,28 +16,37 @@ body {
     display: flex;
     justify-content: center;
     min-height: 110vh;
+    padding-top: 300px;
+    width: 700px;
 }
 
 .top {
     text-align: center;
     color: white;
-    font-size: 35px;
-    font-style: oblique;
+    font-size: 20px;
+    float: left;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+p{
+    font-size: 15px;
+    text-align: left;
 }
 
 .form-box {
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 500px;
     height: 150px;
 }
 
 .two-forms {
     display: flex;
-    gap: 130px;
+    gap: 70px;
     padding-bottom: 20px;
-    width: 100%;
+    width: 445px;
 }
 
 .input-box-region {
