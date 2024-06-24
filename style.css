@@ -31,11 +31,14 @@ body {
     height: 80px;
 }
 
+h2{
+    color: white;
+}
 .container {
     display: flex;
     justify-content: center;
     min-height: 110vh;
-    padding-top: 300px;
+    padding-top: 230px;
     width: 700px;
 }
 
@@ -51,6 +54,7 @@ body {
 p{
     font-size: 15px;
     text-align: left;
+    margin-top: 0;
 }
 
 .form-box {
@@ -99,7 +103,8 @@ p{
     width: 100%;
     font-size: 15px;
     font-weight: 500;
-    color: black;
+    color: white;
+    background-color: #00bf63;
     height: 45px;
     border: none;
     border-radius: 30px;
