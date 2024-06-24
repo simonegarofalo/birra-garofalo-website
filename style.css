@@ -12,6 +12,25 @@ body {
     background-color: black;
 }
 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #black;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    height: 80px;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -25,7 +44,7 @@ body {
     color: white;
     font-size: 20px;
     float: left;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 20px;
 }
 
@@ -90,7 +109,7 @@ p{
 }
 
 .submit:hover {
-    background: rgb(56, 180, 56);
+    background: #00bf63;
     color: white;
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
