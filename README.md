@@ -1,6 +1,6 @@
 # Birra Garofalo
 
-This HTML project represents a registration form for the Garofalo Beer website.
+This HTML project represents a registration form for the Birra Garofalo website.
 
 ## Index
 
