@@ -16,12 +16,12 @@ if ($conn->connect_error) {
 // Ottenere i dati dal form
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
-$region = $_POST['region'];
+$email = $_POST['email'];
 $trattamentodati = isset($_POST['trattamentodati']) ? 1 : 0;
 
 // Preparare e bind
-$stmt = $conn->prepare("INSERT INTO users (firstname, lastname, region, trattamentodati) VALUES (?, ?, ?, ?)");
-$stmt->bind_param("sssi", $firstname, $lastname, $region, $trattamentodati);
+$stmt = $conn->prepare("INSERT INTO users (firstname, lastname, email, trattamentodati) VALUES (?, ?, ?, ?)");
+$stmt->bind_param("sssi", $firstname, $lastname, $email, $trattamentodati);
 
 // Eseguire
 if ($stmt->execute()) {
