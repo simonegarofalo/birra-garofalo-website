@@ -1,50 +1,52 @@
 # Birra Garofalo
 
-Questo progetto HTML rappresenta un modulo di registrazione per il sito web della Birra Garofalo.
+This HTML project represents a registration form for the Garofalo Beer website.
 
-## Indice
+## Index
 
-- [Descrizione]
-- [Installazione]
-- [Utilizzo]
+- [Description]
+- [Installation]
+- [Usage]
 
-## Descrizione
 
-Il progetto HTML è una pagina web che include un modulo di registrazione per raccogliere informazioni come il nome, il cognome e la regione di provenienza dell'utente. Gli utenti devono anche acconsentire al trattamento dei dati personali prima di poter inviare il modulo.
+## Description
 
-## Installazione
+The HTML project is a web page that includes a registration form to collect information such as the user's first name, last name, and email address for commercial purposes. Once the mandatory fields are filled out, the user must also consent to the processing of their personal data before submitting the form.
 
-Per visualizzare il progetto localmente, segui questi passaggi:
 
-1. Clona il repository:
+## Installation
+
+To view the project locally, follow these steps:
+
+1. Clone the repository from GitHub:
     ```bash
     git clone https://github.com/tuo-username/birra-garofalo.git
     ```
 
-2. Naviga nella directory del progetto:
+2. Navigate to the project directory:
     ```bash
     cd birra-garofalo
     ```
 
-3. Assicurati di avere un server web con PHP e MySQL configurati.
+3. Ensure you have a web server with PHP and MySQL configured.
 
-4. Crea un database MySQL chiamato `birra_garofalo` e una tabella `users` con la seguente struttura:
+
+4. Create a MySQL database named birra_garofalo and a table users with the fields:
     ```sql
     CREATE TABLE users (
         id INT AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(255) NOT NULL,
         lastname VARCHAR(255) NOT NULL,
-        region VARCHAR(255) NOT NULL,
+        email VARCHAR(255) NOT NULL,
         trattamentodati BOOLEAN NOT NULL
     );
     ```
 
-5. Modifica i dettagli di connessione al database nel file `database.php` se necessario.
+5. If necessary, modify the database connection details in the database.php file.
 
-6. Apri il file `index.html` in un browser web.
+6. Open the index.html file in your web browser.
 
-## Utilizzo
 
-Puoi utilizzare il modulo di registrazione presente nella pagina HTML per raccogliere i dati di prospect interessati al tuo prodotto e/o servizio.
-Una volta compilato il form, i dati raccolti verranno trasmessi al database MySQL attraverso il file database.php e l'utente sarà reindirizzato nella pagina thank_you.html
+## Usage
 
+You can use the registration form on the HTML page to collect data from potential prospects interested in your product and/or service. This data will be recorded and stored in the MySQL database.
