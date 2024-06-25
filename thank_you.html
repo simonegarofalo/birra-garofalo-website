@@ -7,7 +7,7 @@
     <style>
     
     body {
-        background: url(birra2.png);
+        background: url(./Img/birra2.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -39,12 +39,25 @@
         text-align: center;
         padding-top: 200px;
     }
+
+    @media (max-width: 600px){
+
+        body{
+        overflow-y: visible;
+        background: url(./Img/birra4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: black;
+    }
+    }
+
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo-container">
-            <img src="logo.png" alt="Logo" class="logo">
+            <img src="./Img/logo.png" alt="Logo" class="logo">
         </div>
     </nav>
     <h1>Thank you for your interest!<br> Unfortunately Garofalo beer is not yet available.</h1>

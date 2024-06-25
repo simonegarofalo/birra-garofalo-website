@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
     overflow-y: hidden;
-    background: url(birra.png);
+    background: url(./Img/birra.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -122,5 +122,43 @@ h2{
     background: #00bf63;
     color: white;
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px){
+
+    body{
+        overflow-y: visible;
+        background: url(./Img/birra3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: black;
+    }
+
+    .top{
+        padding: 0px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .two-forms{
+        width: 80%;
+    }
+
+    .input-box-email{
+        width: 92%;
+    }
+
+    .submit{
+        width: 92%;
+    }
+
 }
 
