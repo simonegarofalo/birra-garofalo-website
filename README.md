@@ -22,25 +22,15 @@ To view the project locally, follow these steps:
 
 2. Navigate to the project directory
 
-3. Ensure you have a web server with PHP and MySQL configured.
+3. Ensure you have a web server with PHP and MySQL configured
 
-
-4. Create a MySQL database named birra_garofalo and a table users with the fields:
-    ```
-    CREATE TABLE users (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        firstname VARCHAR(255) NOT NULL,
-        lastname VARCHAR(255) NOT NULL,
-        email VARCHAR(255) NOT NULL,
-        trattamentodati BOOLEAN NOT NULL
-    );
-    ```
+4. Create a MySQL database named birra_garofalo and a table users
 
 5. If necessary, modify the database connection details in the database.php file.
 
-6. Open the index.html file in your web browser.
+6. Open the index.html file in your browser
 
 
 ## Usage
 
-You can use the registration form on the HTML page to collect data from potential prospects interested in your product and/or service. This data will be recorded and stored in the MySQL database.
+You can use the registration form on the HTML page to collect data from from potential customers interested in particular products and/or services. The data collected will be recorded and stored in the MySQL database.
