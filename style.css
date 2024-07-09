@@ -99,7 +99,7 @@ h2 {
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .submit {
@@ -117,8 +117,8 @@ h2 {
 }
 
 .submit:hover {
-    background-color: #00bf63;
-    color: white;
+    background-color: white;
+    color: black;
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
