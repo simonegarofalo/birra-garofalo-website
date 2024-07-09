@@ -122,8 +122,8 @@ h2 {
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* Media query per schermi di larghezza massima 600px */
-@media (max-width: 600px) {
+/* Media query max-width 600px */
+@media (max-width: 768px) {
     body {
         overflow-y: visible;
         background: url('./Img/birra3.png') no-repeat fixed;
