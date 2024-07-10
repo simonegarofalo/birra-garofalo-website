@@ -11,7 +11,7 @@ This HTML project represents a registration form for the Birra Garofalo website.
 
 ## Description
 
-The HTML project is a web page that includes a registration form to collect perfonal information such as the user's first name, last name, and email address for commercial purposes. Once the mandatory fields are filled out, the user must also consent to the processing of their personal data before submitting the form.
+The HTML project is a web page that includes a registration form to collect personal information such as the user's first name, last name, and email address for commercial purposes. Once the mandatory fields are filled out, the user must also consent to the processing of their personal data before submitting the form.
 
 
 ## Installation
