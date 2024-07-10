@@ -33,4 +33,4 @@ To view the project locally, follow these steps:
 
 ## Usage
 
-You can use the registration form on the HTML page to collect data from from potential customers interested in particular products and/or services. The data collected will be recorded and stored in the MySQL database.
+You can use the registration form on the HTML page to collect data from potential customers interested in your products and/or services. The data collected will be recorded and stored in the MySQL database.
