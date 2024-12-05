@@ -1,63 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garofalo Beer</title>
-    <style>
-    
-    body {
-        background: url(./Img/birra2.png) no-repeat fixed;
-        background-size: cover;
-        background-color: black;
-    }
-    
-    .navbar {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-    }
-
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .logo {
-        height: 80px;
-    }
-    
-    h1 {
-        color: white;
-        text-align: center;
-        padding-top: 200px;
-    }
-
-
-    @media (max-width: 768px) {
-
-        body{
-        overflow-y: visible;
-        background: url(./Img/birra4.png) no-repeat fixed;
-        background-size: cover;
-        background-color: black;
-    }
-    }
-
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="./Img/logo.png" alt="Logo" class="logo">
-            </a>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <header class="grid-layout">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Img/logo.png" alt="Logo" />
+          </a>
         </div>
-    </nav>
-    <h1>Thank you for your interest!<br> Unfortunately Garofalo Beer is not yet available.</h1>
-</body>
+      </nav>
+    </header>
+    <main>
+      <div class="thanks-container grid-layout">
+        <div class="thanks-content">
+          <h1>
+            Thank you for your interest!<br />
+            Unfortunately Garofalo Beer is not yet available.
+          </h1>
+          <div class="container-img">
+            <img src="./Img/beer.png" alt="Beer" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer grid-layout">
+        <div class="brand-data">
+          <div class="logo">
+            <img src="./Img/logo.png" alt="Logo" />
+          </div>
+        </div>
+        <ul class="list">
+          <li>About</li>
+        </ul>
+        <ul class="list">
+          <li>Services</li>
+        </ul>
+        <ul class="list">
+          <li>Products</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

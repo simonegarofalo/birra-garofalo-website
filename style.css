@@ -1,159 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background-color-green: #00bf63;
+  --background-color-darkgreen: #01a053;
+  --background-color-black: #000000;
+  --background-color-grey: #7d7d7d;
+  --background-color-lightgrey: #b0b0b0;
+
+  --text-color-white: #ffffff;
+
+  --xs-font-size: 7px;
+  --s-font-size: 14px;
+  --m-font-size: 21px;
+  --l-font-size: 28px;
+  --xl-font-size: 35px;
+  --xxl-font-size: 42px;
+  --xxxl-font-size: 49px;
+
+  --default-margin-l-and-r: 0 20px;
+  --default-margin-t-and-b: 50px 0 0 0;
+}
 
 * {
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 body {
-    min-height: 100vh;
-    overflow-y: hidden;
-    background: url('./Img/birra.png') no-repeat fixed;
-    background-size: cover;
-    background-color: black;
+  min-height: 100svh;
+
+  font-family: "Poppins";
+
+  background-color: var(--background-color-black);
+  color: var(--text-color-white);
 }
 
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+nav {
+  grid-column: 2/12;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.logo img {
+  height: 80px;
 }
 
-.logo {
-    height: 80px;
+.box-container {
+  height: 500px;
+
+  margin: var(--default-margin-t-and-b);
+}
+.service-description {
+  grid-column: 2/7;
+  gap: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  height: 500px;
+  text-align: center;
 }
 
-.top {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    float: left;
-    padding-top: 50px;
-    padding-left: 20px;
+.service-description h1 {
+  font-size: var(--xxxl-font-size);
 }
 
-p {
-    font-size: 15px;
-    text-align: left;
-    margin-top: 0;
+.service-description p {
+  font-size: var(--m-font-size);
 }
 
-h2 {
-    color: white;
-    font-weight: 100;
+.content-box {
+  grid-column: 7/13;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 500px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    min-height: 110vh;
-    padding-top: 50px;
-    width: 700px;
-    margin: 28px;
+.content-box h2 {
+  font-size: var(--l-font-size);
+
+  padding: 20px 0;
 }
 
 .form-box {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  width: 100%;
+  height: 500px;
 }
 
 .two-forms {
-    display: flex;
-    gap: 70px;
-    padding-bottom: 20px;
-    width: 445px;
+  display: flex;
+  gap: 10px;
+
+  padding: 10px 0;
+
+  width: 400px;
 }
 
 .input-box-email {
-    display: flex;
-    width: 100%;
+  display: flex;
+
+  width: 100%;
 }
 
 .checkbox {
-    color: white;
-    padding-top: 20px;
-    font-size: 10px;
+  color: var(--text-color-white);
+  font-size: var(--xs-font-size);
+
+  padding: 10px 0;
 }
 
 .input-field {
-    font-size: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    height: 50px;
-    width: 100%;
-    padding: 0 10px 0 45px;
-    border: none;
-    border-radius: 30px;
-    outline: none;
+  height: 50px;
+  width: 100%;
+
+  font-size: var(--s-font-size);
+  background-color: var(--background-color-grey);
+  color: var(--text-color-white);
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 25px;
+  outline: none;
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+  color: var(--background-color-lightgrey);
+}
+
+.input-box {
+  margin-top: 8px;
 }
 
 .submit {
-    width: 100%;
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    background-color: #00bf63;
-    height: 45px;
-    border: none;
-    border-radius: 30px;
-    outline: none;
-    cursor: pointer;
-    margin-bottom: 100px;
+  height: 50px;
+  width: 100%;
+
+  font-size: var(--s-font-size);
+  color: var(--text-color-white);
+  background-color: var(--background-color-green);
+
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
 }
 
 .submit:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-color-darkgreen);
+}
+
+.thanks-container {
+  height: 500px;
+
+  margin-top: 50px;
+}
+
+.thanks-content {
+  grid-column: 2/12;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.container-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  height: 120px;
+
+  color: var(--text-color-white);
+  background-color: var(--background-color-black);
+
+  border-top: 1px solid rgb(65, 65, 65);
+}
+
+.brand-data {
+  grid-column: 2/7;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: var(--s-font-size);
+}
+
+.brand-data img {
+  height: 50px;
+}
+
+.list {
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  font-size: var(--s-font-size);
 }
 
 /* Media query max-width 600px */
 @media (max-width: 768px) {
-    body {
-        overflow-y: visible;
-        background: url('./Img/birra3.png') no-repeat fixed;
-        background-size: cover;
-        background-color: black;
-    }
+  body {
+    margin: 20px;
+  }
+  .box-container {
+    height: 100%;
+  }
+  .service-description {
+    grid-column: 2/12;
+  }
 
-    .top {
-        padding: 0;
-    }
+  .content-box {
+    grid-column: 2/12;
 
-    p {
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .two-forms {
-        width: 80%;
-    }
-
-    .input-box-email {
-        width: 92%;
-    }
-
-    .submit {
-        width: 92%;
-    }
+    margin-top: 100px;
+  }
 }
-
