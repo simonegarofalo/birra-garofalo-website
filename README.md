@@ -1,6 +1,6 @@
 # Garofalo Beer
 
-This HTML project represents a registration form for the Garofalo Beer website.
+This project represents a registration form for the Garofalo Beer website.
 
 ## Index
 
@@ -33,4 +33,4 @@ To view the project locally, follow these steps:
 
 ## Purpose
 
-You can use the registration form on the HTML page to collect data from potential customers interested in your products and/or services. The data collected will be recorded and stored in the MySQL database and can be used for marketing purposes.
+You can use the registration form on the page to collect data from potential customers interested in your products and/or services. The data collected will be recorded and stored in the MySQL database and can be used for marketing purposes.
